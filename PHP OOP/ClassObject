@@ -1,0 +1,23 @@
+<?php
+class add
+{
+    public $a;
+    public $b;
+
+    function __construct($a, $b)
+    {
+        $this->a = $a;
+        $this->b = $b;
+    }
+
+    function sum()
+    {
+        return $this->a + $this->b;
+    }
+}
+
+// Create a new instance of the add class
+$d = new add(5, 3);
+
+// Call the sum method and echo the result
+echo "The sum is: " . $d->sum();
